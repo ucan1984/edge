@@ -11,6 +11,9 @@ cse:
       address: http://127.0.0.1:30100
       instance:
         watch: false
+  config:
+    client:
+      refreshMode: 1
   #monitor:
     #client:
       #serverUri: https://cse.cn-east-2.myhuaweicloud.com
