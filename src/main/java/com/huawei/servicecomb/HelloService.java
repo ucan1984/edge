@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 @RestSchema(schemaId = "hello")
 @RequestMapping(path = "/hello", produces = MediaType.APPLICATION_JSON)
 public class HelloService {
-	@RequestMapping(path = "/sayhi", method = RequestMethod.POST)
+	@RequestMapping(path = "/say", method = RequestMethod.GET)
 	public String sayHi(@RequestParam(name = "name") String name) {
 		return "Hello " + name;
 	}
